@@ -34,6 +34,8 @@ public class FileProperties extends Properties implements FileIO {
 
     }
 
+    public static void main(String[] args) {
 
+    }
 
 }
