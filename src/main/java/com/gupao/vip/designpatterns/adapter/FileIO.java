@@ -4,7 +4,7 @@ import java.io.IOException;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //适配器设计模式
  * @Date 23:52 2019/7/4
  **/
 public interface FileIO {

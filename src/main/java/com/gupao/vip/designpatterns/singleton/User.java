@@ -2,7 +2,7 @@ package com.gupao.vip.designpatterns.singleton;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //单例设计模式
  * @Date 23:23 2019/7/7
  **/
 public class User {

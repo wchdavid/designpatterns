@@ -2,7 +2,7 @@ package com.gupao.vip.designpatterns.prototype;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //原型设计模式
  * @Date 22:33 2019/7/7
  **/
 public abstract class AbsProduct implements Cloneable {

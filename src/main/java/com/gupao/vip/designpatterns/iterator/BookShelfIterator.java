@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //迭代器设计模式
  * @Date 20:55 2019/7/4
  **/
 public class BookShelfIterator implements Iterator {

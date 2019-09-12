@@ -2,7 +2,7 @@ package com.gupao.vip.designpatterns.builder;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //建造者模式
  * @Date 5:06 2019/7/20
  **/
 public class Director {

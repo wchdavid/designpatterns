@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //迭代器设计模式
  * @Date 20:52 2019/7/4
  **/
 public class BookShelf implements Aggregate {
