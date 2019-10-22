@@ -34,4 +34,6 @@ public abstract class AbsCourse {
     public void setPrice(Integer price) {
         this.price = price;
     }
+
+    public abstract String getContent();
 }
