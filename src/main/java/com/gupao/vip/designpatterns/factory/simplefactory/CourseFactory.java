@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  * @Author wangchunhui
- * @Description //TODO
+ * @Description //简单工厂
  * @Date 23:18 2019/7/1
  **/
 public class CourseFactory {
