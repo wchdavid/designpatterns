@@ -8,10 +8,10 @@ package com.gupao.vip.designpatterns.factory.simplefactory;
 public class SimpleFactoryTest {
 
     public static void main(String[] args) {
-        JavaCourse javaCourse = CourseFactory.create ( "com.gupao.vip.designpatterns.factory.simplefactory.JavaNote" );
+        JavaCourse javaCourse = CourseFactory.create ( "com.gupao.vip.designpatterns.factory.simplefactory.JavaCourse" );
         System.out.println (javaCourse.getContent ());
-        PythonCourse pythonCourse =  CourseFactory.create ( PythonCourse.class );
-        System.out.println ( pythonCourse.getContent ());
+        PythonCourse pythonCourse = (PythonCourse)CourseFactory.create ( PythonCourse.class );
+        System.out.println (pythonCourse.getContent());
     }
 
 

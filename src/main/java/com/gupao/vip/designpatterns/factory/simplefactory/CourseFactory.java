@@ -10,25 +10,27 @@ import org.apache.commons.lang3.StringUtils;
 public class CourseFactory {
 
     public static JavaCourse create(String courseClassName) {
-        if (!StringUtils.isBlank ( courseClassName )) {
+        if (!StringUtils.isBlank(courseClassName)) {
             try {
-                return (JavaCourse) Class.forName ( courseClassName ).newInstance ();
-            } catch ( ClassNotFoundException | InstantiationException | IllegalAccessException e ) {
-                e.printStackTrace ();
+                return (JavaCourse) Class.forName(courseClassName).newInstance();
+            } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+                e.printStackTrace();
             }
         }
         return null;
     }
 
-    public static PythonCourse create(Class courseClass) {
-        if ( courseClass !=null) {
-            try {
-                return (PythonCourse) courseClass.newInstance ();
-            } catch ( InstantiationException | IllegalAccessException e ) {
-                e.printStackTrace ();
-            }
+    public static AbsCourse create(Class<? extends AbsCourse> clazz) {
+        if (clazz == null) {
+            return null;
         }
-        return null;
-    }
 
+        AbsCourse course = null;
+        try {
+            course = clazz.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return course;
+    }
 }
